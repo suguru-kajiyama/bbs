@@ -1,0 +1,44 @@
+掲示板の作成
+
+目的：会員登録制の掲示板を作成する
+
+仕様：1 userは3種類（1：閲覧のみ、2：書き込みができる、3管理人）
+　　　2 掲示板は見出しを作り、コメント一覧が見られるようになっている
+　　　3 管理人はユーザの書き込みを削除、制限、パスワード変更をおこなう
+　　　4 流れ　top - create top - login - content - comment
+
+database 
+    users :   id 
+             name
+             role
+             password
+             email
+             delflag
+             created_at
+    titles : id
+             user_id
+             name
+             delflag
+             created_at
+    comments:id
+             user_id
+             title_id
+             text
+             delflag
+             created_at
+             updated_at
+
+userC.php @create
+          @login
+          @updated
+
+titleC.php @create
+           @view
+           @delete
+commentC@php @create 
+             @view
+             @delete
+models
+userM.php 
+titeleM.php
+commentM.php              

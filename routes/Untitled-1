@@ -1,0 +1,6 @@
+@extends('master') 
+@section('title','top')
+@section('stylesheet','')
+@section('content')
+  
+@endsection
