@@ -7,11 +7,18 @@
   <form action="/login"method="post"><br>
 
   @csrf
-  
-  <label>name:<input type="text"name="name"></label><br>
-  <label>email:<input type="text"name="email"></label><br>
-  <label>password<input type="password"name="password"></label><br>
+  <table>
+      <tr>
+        <td class="form-type">email</td>
+        <td><input type="text"name="email"></td>
+      </tr>
+      <tr>
+        <td class="form-type">password</td>
+        <td><input type="password"name="password"></td>
+      </tr>
+  </table>
   <input type="submit">
   </form>
   <a href="/signup">新規登録</a>
+  <a href="/contents">ログインしない</a>
 @endsection

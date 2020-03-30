@@ -22,5 +22,5 @@ Route::post( '/signup/create','userController@create' );
 Route::get( '/contents','titleController@index');
 Route::post( '/contents/create','titleController@createTitle');
 Route::get( '/contents/{id}','commentController@index');
-Route::post('/contents/id/create','commentController@create');
+Route::post('/contents/{id}/create','commentController@create');
 
